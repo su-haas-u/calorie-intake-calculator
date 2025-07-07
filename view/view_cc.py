@@ -189,7 +189,7 @@ class CalorieCalculatorView:
         activityLevel_label.grid(row=6, column=0, sticky=tk.W, pady= 5)
         # Activity level dropdown menu
         '''
-        NOTE: Activity levels and their corresponding meaning.
+        NOTE: Activity levels and corresponding descriptions.
             'Sedentary: Minimal or no exercise in a week.',
             'Lightly Active: Exercise lightly one to three days a week.', 
             'Moderately Active: Exercise moderately three to five days a week.', 

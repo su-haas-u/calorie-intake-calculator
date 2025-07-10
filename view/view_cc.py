@@ -60,7 +60,7 @@ class CalorieCalculatorView:
         # age label and entry field
         age_label = tk.Label(formFrame, text='Age', font=('Helvetica New', 12), fg='white', bg='black')
         age_label.grid(row=0, column=0, pady=5, sticky=tk.W)
-        self.age_entry = tk.Entry(formFrame, bg='black', fg='white', cursor='xterm', insertbackground='white', highlightthickness=1, highlightcolor='white', highlightbackground='grey', font=('Courier New', 12))
+        self.age_entry = tk.Entry(formFrame, bg='black', fg='white', cursor='xterm', insertbackground='white', highlightthickness=1, highlightcolor='white', highlightbackground='grey', font=('Helvetica New', 12))
         self.age_entry.grid(row=0, column=1, padx=10)
 
         # weight unit frame
@@ -206,13 +206,13 @@ class CalorieCalculatorView:
         self.activity_level = tk.StringVar(formFrame, value='Sedentary')
         activityLevelMenu = tk.OptionMenu(formFrame, self.activity_level, *activity_levels)
         activityLevelMenu.config( fg='white', bg='black', font=('Helvetica New', 12), highlightthickness=0)
-        activityLevelMenu['menu'].config(fg='white', bg='black', font=('Courier New', 12))
+        activityLevelMenu['menu'].config(fg='white', bg='black', font=('Helvetica New', 12))
         activityLevelMenu.grid(row=6, column=1, sticky=tk.W, padx=50)
 
         # Desired calorie deficit entry
         deficit_label = tk.Label(formFrame, text='Calorie Deficit', font=('Helvetica New', 12), fg='white', bg='black')
         deficit_label.grid(row=7, column=0, sticky=tk.W, pady= 5)
-        self.deficit_entry = tk.Entry(formFrame, bg='black', fg='white', cursor='xterm', insertbackground='white', highlightthickness=1, highlightcolor='white', highlightbackground='grey', font=('Courier New', 12))
+        self.deficit_entry = tk.Entry(formFrame, bg='black', fg='white', cursor='xterm', insertbackground='white', highlightthickness=1, highlightcolor='white', highlightbackground='grey', font=('Helvetica New', 12))
         self.deficit_entry.grid(row=7, column=1, padx=10)
 
         # Submit button
